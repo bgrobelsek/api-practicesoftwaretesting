@@ -20,4 +20,4 @@ COPY . .
 RUN poetry config virtualenvs.create false && poetry install
 
 # Command to run pytest using Poetry and generate the test report
-CMD ["poetry", "run", "pytest", "--maxfail=1", "--disable-warnings", "--html=reports/report.html"]
+CMD ["poetry", "run", "pytest"]

@@ -1,9 +1,7 @@
-PYTHON = python3
-POETRY = poetry
 DOCKER_COMPOSE = docker-compose
 
 # Targets
-.PHONY: install test run clean
+.PHONY: up down clean
 
 # Builds the project and runs the tests
 up:
@@ -13,7 +11,7 @@ up:
 run:
 	$(DOCKER_COMPOSE) up
 
-# Removes all the cache files and the report
+# Removes all the cache files and the report (works only for Linux and macOS)
 clean:
 	find . -name ".pytest_cache" -exec rm -rf {} +
 	find . -name "__pycache__" -exec rm -rf {} +
