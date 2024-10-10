@@ -29,5 +29,5 @@ To run the tests, follow these steps:
 
 Additionally you can check the Makefile for other commands if needed: 
 * `make run` - rerun the tests once the project is built 
-* `make clean` - removes all the cache files and the report
+* `make clean` - removes all the cache files and the report [works only for Linux and macOS]
 * `make down` - stops and removes the containers
