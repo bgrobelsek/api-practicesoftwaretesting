@@ -5,4 +5,3 @@ services:
     build: .
     volumes:
       - .:/app
-    command: ["/root/.local/bin/poetry", "run", "pytest", "--maxfail=1", "--disable-warnings", "--html=reports/report.html"]
